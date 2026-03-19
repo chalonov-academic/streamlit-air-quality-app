@@ -6,3 +6,4 @@ seaborn
 xgboost
 scikit-learn
 streamlit
+altair<5
