@@ -19,7 +19,7 @@ nivel = st.radio(
 
 # DATOS
 df = pd.read_csv("data/AirQuality_Bogota_Estaciones_20210101_20230614.csv", sep = ";", decimal = ',')
-df["datetime"] = pd.date_range('2021-01-01 01:00:00', periods=len(df), freq='H')
+df["datetime"] = pd.date_range('2021-01-01 01:00:00', periods=len(df), freq='h')
 df["month"] = df["datetime"].dt.month
 
 stations_keys = ["Bolivia", "Carvajal - Sevillana", "CAR", "Colina", "Fontibón", "Guaymaral",
